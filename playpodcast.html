@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Podquest</title>
+
+    <!-- Custom fonts for this template-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+    <link rel="stylesheet" href="flickity.css">
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon//favicon-16x16.png">
+    <link rel="manifest" href="img/favicon//site.webmanifest">
+    <link rel="mask-icon" href="img/favicon//safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+</head>
+
+<body id="page-top">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <ul class="navbar-nav sidebar shadow fixed-top sidebar-dark accordion" id="accordionSidebar" style="background-color: #FAFAFA;">
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item active mx-5 mt-2">
+                <a class="nav-link" href="index.html">
+                    <i class="fas fa-fw fa-home" style="color: black;"></i>
+                    <span style="color: black; font-size: large;">Home</span></a>
+            </li>
+
+            <li class="nav-item active mx-5 mt-2">
+                <a class="nav-link" href="index.html">
+                    <i class="fas fa-fw fa-home" style="color: black;"></i>
+                    <span style="color: black; font-size: large;">Home</span></a>
+            </li>
+
+            <li class="nav-item mx-5">
+                <a class="nav-link" href="search.html">
+                    <i class="fas fa-fw fa-search" style="color: black;"></i>
+                    <span style="color: black; font-size: large;">Search</span></a>
+            </li>
+            
+            <li class="nav-item mx-5">
+                <a class="nav-link" href="collection.html">
+                    <i class="fas fa-fw fa-list-ul" style="color: black;"></i>
+                    <span style="color: black; font-size: large;">Collection</span></a>
+            </li>
+            
+            <li class="nav-item mx-5">
+                <a class="nav-link" href="profile.html">
+                    <i class="fas fa-fw fa-user" style="color: black;"></i>
+                    <span style="color: black; font-size: large;">Profile</span></a>
+            </li>
+
+        </ul>
+        <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="offset-2 d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+
+                <!-- Topbar -->
+                <nav class="navbar navbar-expand navbar-light topbar fixed-top mb-4 shadow" style="background-color: #814A8D;">
+
+                    <!-- Sidebar Toggle (Topbar) -->
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+                    </button>
+
+                    <!-- Sidebar - Brand -->
+                    <div class="ml-5">
+                        <a href="index.html">
+                            <div>
+                                <img src="img/Logo.svg" alt="logo">
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="ml-5">
+
+                    </div>
+
+                    <!-- Topbar Search -->
+                    <ul class="navbar-nav ml-5">
+                        <li class="nav-item">
+                            <a class="nav-link" href="podcast.html">
+                                <span class="text-white font-weight-bold">Podcast</span></a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="live.html">
+                                <span class="text-white">Live</span></a>
+                        </li>
+                    </ul>
+
+                    <!-- Topbar Navbar -->
+                    <ul class="navbar-nav ml-auto">
+
+                        <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+                        <li class="nav-item dropdown no-arrow d-sm-none">
+                            <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-search fa-fw"></i>
+                            </a>
+                            <!-- Dropdown - Messages -->
+                            <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
+                                aria-labelledby="searchDropdown">
+                                <form class="form-inline mr-auto w-100 navbar-search">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control bg-light border-0 small"
+                                            placeholder="Search for..." aria-label="Search"
+                                            aria-describedby="basic-addon2">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-primary" type="button">
+                                                <i class="fas fa-search fa-sm"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+
+                        <!-- Nav Item - User Information -->
+                        <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link" href="login.html">
+                                <img class="img-profile rounded-circle mr-2"
+                                    src="img/icon/before-login.svg">
+                                <span class="d-none d-lg-inline text-white regular">Login</span>
+                            </a>
+                            <!-- Dropdown - User Information -->
+                            <!-- <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="userDropdown">
+                                <a class="dropdown-item" href="#" data-toggle="modal">
+                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Logout
+                                </a>
+                            </div> -->
+                        </li>
+
+                    </ul>
+
+                </nav>
+                <!-- End of Topbar -->
+
+                <!-- Begin Page Content -->
+                <div class="mb-5">
+                    <br>
+                </div> 
+                <div class="position-relative w-100 d-flex justify-content-center">
+                    <img class="bg-img" src="img/playpodcast/background.svg" alt="..." style="filter: blur(3px); -webkit-filter: blur(3px);">
+                    <div class="position-absolute mt-5 text-center">
+                        <div>
+                            <img class="rounded" src="img/playpodcast/cover.svg" alt="">
+                        </div>
+                        <div class="mt-3">
+                            <a href="#"><img src="img/playpodcast/play.svg" alt=""></a>
+                        </div>
+                        <div class="mt-2">
+                            <h2 class="font-weight-bold text-white">First Job Stories</h2>
+                            <span class="text-white font-weight-bold">20 Min</span>
+                        </div>
+                        <div class="row mt-5">
+                            <div class="col-sm">
+                                <a href="#">
+                                <img src="img/playpodcast/like.svg" alt="">
+                                </a>
+                            </div>
+                            <div class="col-sm">
+                                <a href="#">
+                                <img src="img/playpodcast/comment.svg" alt="">
+                                </a>
+                            </div>
+                            <div class="col-sm">
+                                <a href="#">
+                                <img src="img/playpodcast/share.svg" alt="">
+                                </a>
+                            </div>
+                            <div class="col-sm">
+                                <a href="#">
+                                <img src="img/playpodcast/save.svg" alt="">
+                                </a>
+                            </div>
+                            <div class="col-sm">
+                                <a href="#">
+                                <img src="img/playpodcast/download.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                
+                <div class="container-fluid mb-5">
+                    <div class="mt-5 mx-3">
+                        <h6 class="text-black">April 20th, 2023</h6>
+                        <h6 class="text-black">Showcases a guest who shares their unique journey and challenges in landing their initial job, as well as their learning experiences and achievements while working in their chosen field. The podcast aims to provide insights, inspiration, and guidance to individuals who are just starting their careers or considering a career change. The stories are relatable and authentic, and the conversations are insightful and engaging, making it an ideal listen for anyone seeking motivation and practical advice in navigating the professional world.</h6>
+                    </div>
+
+                    <div class="mt-5">
+                        <div class="card d-sm-flex col-xl-auto col-md-6 mb-4 ml-3 mx-3" style="background-color: #FF914D;">
+                            <div class="d-sm-flex card-body justify-content-between align-items-center w-100" style="height: 115px;">
+                                <div class="d-sm-flex align-items-center">
+                                    <div>
+                                        <img src="img/playpodcast/photo.svg" alt="">
+                                    </div>
+                                    <div class="ml-4">
+                                        <div>
+                                            <span class="font-weight-bold" style="color: black;">Witty Remedy</span>
+                                        </div>
+                                        <div>
+                                            <span class="font-weight-bold" style="color: black;">154k Subscribers</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="rounded-circle">
+                                    <a href="">
+                                        <button style="background-color: #8C52FF; border: unset;">
+                                            <div>
+                                                <span class="font-weight-bold text-black">Subscibe</span>
+                                            </div>
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mx-3">
+                        <div>
+                            <h5 class="text-dark font-weight-bold">Comment</h5>
+                        </div>
+
+                        <div class="mt-4 d-sm-flex align-items-center">
+                            <img src="img/playpodcast/comment1.svg" alt="">
+                            <textarea class="ml-3" style="" name="" id="" cols="150" rows="2" placeholder="Type your comment here..."></textarea>
+                        </div>
+
+                        <div class="mt-5 d-flex align-items-center">
+                            <img src="img/playpodcast/comment2.svg" alt="">
+                            <div class="ml-3">
+                                <div>
+                                    <span>Jonathan</span>
+                                    <span>2 minutes ago</span>
+                                </div>
+                                <div>
+                                    <h6 class="text-dark">I absolutely love listening this! So inspiring to hear about other people's experiences and how they overcame challenges in their first job. It's helped me gain more confidence in my own career journey.</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-5 d-flex align-items-center">
+                            <img src="img/playpodcast/comment3.svg" alt="">
+                            <div class="ml-3">
+                                <div>
+                                    <span>Michelle</span>
+                                    <span>6 minutes ago</span>
+                                </div>
+                                <div>
+                                    <h6 class="text-dark">This podcast has given me a new perspective on the value of perseverance and learning from mistakes. I highly recommend it to anyone looking for career advice or just a great listen.</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-5 d-flex align-items-center">
+                            <img src="img/playpodcast/comment4.svg" alt="">
+                            <div class="ml-3">
+                                <div>
+                                    <span>Willy</span>
+                                    <span>7 minutes ago</span>
+                                </div>
+                                <div>
+                                    <h6 class="text-dark">The guests on this show are so relatable and down-to-earth. I appreciate how they share their honest experiences and provide valuable insights for anyone just starting their career.</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-5 mb-5 d-flex align-items-center">
+                            <img src="img/playpodcast/comment5.svg" alt="">
+                            <div class="ml-3">
+                                <div>
+                                    <span>Dhanny</span>
+                                    <span>9 minutes ago</span>
+                                </div>
+                                <div>
+                                    <h6 class="text-dark">As someone who's currently searching for my first job, this podcast has been a tremendous resource for me. It's reassuring to know that I'm not alone in my struggles and that success is achievable with hard work and determination.</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+                       <!-- Footer -->
+                       <footer class="sticky-footer" style="background-color: #814A8D;">
+                        <div class="container-fluid mb-4">
+                            <div class="row">
+                                <div class="col-sm">
+                                    <img src="img/imgfooter.svg" alt="">
+                                </div>
+        
+                                <div class="col-sm">
+                                    <div style="width: 18rem;">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-white font-weight-bold">Start A Conversation</h5>
+                                            <div class="mb-1">
+                                                <a href=""><img src="img/contact/email.svg" alt=""></a>
+                                                <span class="card-subtitle text-white mb-2">support@podquest.id</span>
+                                            </div>
+                                            <div class="mb-1">
+                                                <a href=""><img src="img/contact/phone.svg" alt=""></a>
+                                                <span class="card-subtitle text-white mb-2">(061) 333-2456</span>
+                                            </div>
+                                            <div class="mb-1">
+                                                <a href=""><img src="img/contact/mobile.svg" alt=""></a>
+                                                <span class="card-subtitle text-white mb-2">+62-874-6716-5067</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-sm">
+                                    <div style="width: 18rem;">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-white font-weight-bold">Follow us on</h5>
+                                            <div>
+                                                <a href=""><img src="img/contact/instagram.svg" alt=""></a>
+                                                <a href=""><img src="img/contact/facebook.svg" alt=""></a>
+                                                <a href=""><img src="img/contact/twitter.svg" alt=""></a>
+                                                <a href=""><img src="img/contact/youtube.svg" alt=""></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container my-auto">
+                            <div class="copyright text-center my-auto">
+                                <span class="text-white">&copy; Podquest 2023</span>
+                            </div>
+                        </div>
+                    </footer>
+                    <!-- End of Footer -->
+        
+                </div>
+                <!-- End of Content Wrapper -->
+        
+            </div>
+            <!-- End of Page Wrapper -->
+        
+            <!-- Bootstrap core JavaScript-->
+            <script src="vendor/jquery/jquery.min.js"></script>
+            <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        
+            <!-- Core plugin JavaScript-->
+            <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+        
+            <!-- Custom scripts for all pages-->
+            <script src="js/sb-admin-2.min.js"></script>
+        
+            <!-- Page level plugins -->
+            <script src="vendor/chart.js/Chart.min.js"></script>
+        
+            <!-- Page level custom scripts -->
+            <script src="js/demo/chart-area-demo.js"></script>
+            <script src="js/demo/chart-pie-demo.js"></script>
+            <script src="flickity.js"></script>
+            
+        </body>
+        
+</html>

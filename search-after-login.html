@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Podquest</title>
+
+    <!-- Custom fonts for this template-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+    <link rel="stylesheet" href="flickity.css">
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon//favicon-16x16.png">
+    <link rel="manifest" href="img/favicon//site.webmanifest">
+    <link rel="mask-icon" href="img/favicon//safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+</head>
+
+<body id="page-top">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <ul class="navbar-nav sidebar shadow fixed-top sidebar-dark accordion" id="accordionSidebar" style="background-color: #FAFAFA;">
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item active mx-5 mt-2">
+                <a class="nav-link" href="index.html">
+                    <i class="fas fa-fw fa-home" style="color: black;"></i>
+                    <span style="color: black; font-size: large;">Home</span></a>
+            </li>
+
+            <li class="nav-item mx-5 mt-2">
+                <a class="nav-link" href="home-after-login.html">
+                    <i class="fas fa-fw fa-home" style="color: black;"></i>
+                    <span style="color: black; font-size: large;">Home</span></a>
+            </li>
+
+            <li class="nav-item active mx-5">
+                <a class="nav-link" href="search-after-login.html">
+                    <i class="fas fa-fw fa-search" style="color: black;"></i>
+                    <span style="color: black; font-size: large;">Search</span></a>
+            </li>
+            
+            <li class="nav-item mx-5">
+                <a class="nav-link" href="collection-after-login.html">
+                    <i class="fas fa-fw fa-list-ul" style="color: black;"></i>
+                    <span style="color: black; font-size: large;">Collection</span></a>
+            </li>
+            
+            <li class="nav-item mx-5">
+                <a class="nav-link" href="profile.html">
+                    <i class="fas fa-fw fa-user" style="color: black;"></i>
+                    <span style="color: black; font-size: large;">Profile</span></a>
+            </li>
+            
+            <li class="nav-item mx-5">
+                <a class="nav-link" href="index.html">
+                    <i class="fas fa-sign-out-alt" style="color: black;"></i>
+                    <span class="" style="color: black; font-size: large;">Log Out</span></a>
+            </li>
+        </ul>
+        <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="offset-2 d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+
+                <!-- Topbar -->
+                <nav class="navbar navbar-expand navbar-light topbar fixed-top mb-4 shadow" style="background-color: #814A8D;">
+
+                    <!-- Sidebar Toggle (Topbar) -->
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+                    </button>
+
+                    <!-- Sidebar - Brand -->
+                    <div class="ml-5">
+                        <a href="index.html">
+                            <div>
+                                <img src="img/Logo.svg" alt="logo">
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="ml-5">
+
+                    </div>
+
+                    <!-- Topbar Search -->
+                    <ul class="navbar-nav ml-5">
+                        <li class="nav-item">
+                            <a class="nav-link" href="home-after-login.html">
+                                <span class="text-white font-weight-bold">Podcast</span></a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="live-after-login.html">
+                                <span class="text-white">Live</span></a>
+                        </li>
+                    </ul>
+
+                    <!-- Topbar Navbar -->
+                    <ul class="navbar-nav ml-auto mr-3">
+
+                        <!-- Nav Item - User Information -->
+                        <li class="nav-item dropdown no-arrow">
+                            <a href="profile.html">
+                                <img class="img-profile rounded-circle mr-1"
+                                    src="img/photo.svg">
+                                <span class="d-none d-lg-inline text-white regular mt-1">Cakra</span>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </nav>
+                <!-- End of Topbar -->
+
+                <div class="mb-4">
+                    <div class="d-sm-flex align-items-center justify-content-between mt-4 mb-4">
+                        
+                        <form class="d-none d-sm-inline-block form-inline w-100 navbar-search">
+                           <div class="input-group border rounded" style="border-color: #FF914D !important;">
+                               <input type="text" class="form-control bg-light border-0 small" placeholder="Search podcast"
+                                   aria-label="Search" aria-describedby="basic-addon2">
+                               <div class="input-group-append">
+                                   <button class="btn btn-white" type="button">
+                                       <i class="fas fa-search fa-sm" style="color: #FF914D;"></i>
+                                   </button>
+                               </div>
+                           </div>
+                       </form>
+                       </div>
+                </div>
+                
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+                    <!-- Page Heading -->
+                    <div class="d-sm-flex align-items-center justify-content-between mt-4 mb-4">
+                        
+                     <form class="d-none d-sm-inline-block form-inline w-100 navbar-search">
+                        <div class="input-group border rounded" style="border-color: black !important;">
+                            <input type="text" class="form-control bg-light border-0 small" placeholder="Search podcast"
+                                aria-label="Search" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-white" type="button">
+                                    <i class="fas fa-search fa-sm" style="color: black;"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                    </div>
+                    
+                    <!-- Explore -->
+                    <div class="d-sm-flex align-items-center justify-content-between">
+                        <h5 class="font-weight-bold text-dark">Explore</h5>
+                    </div>
+
+                    <div class="row d-sm-flex align-items-center justify-content-between">
+                    <a href="index.html">
+                        <div class="card d-sm-flex col-xl-auto col-md-6 mb-4 ml-3" style="background-color: #FF914D;">
+                            <div class="d-sm-flex card-body justify-content-between align-items-center" style="width: 495px; height: 60px;">
+                                <span class="font-weight-bold" style="color: black;">Podcast</span>
+                                <img src="img/icon/mic.svg" alt="">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="live.html">
+                        <div class="card d-sm-flex col-xl-auto col-md-6 mb-4 mr-2" style="background-color: #FF914D;">
+                            <div class="d-sm-flex card-body justify-content-between align-items-center" style="width: 495px; height: 60px;">
+                                <span class="font-weight-bold" style="color: black;">Live</span>
+                                <img src="img/icon/live.svg" alt="">
+                            </div>
+                        </div>
+                    </a>
+                    </div>
+                    
+                    <div class="d-sm-flex align-items-center justify-content-between">
+                        <h5 class="font-weight-bold text-dark">Explore Other Genres</h5>
+                    </div>
+
+                    <div class="row d-sm-flex align-items-center justify-content-between">
+                    <a href="#">
+                        <div class="card d-sm-flex col-xl-auto col-md-6 mb-4 ml-3" style="background-color: #FF914D;">
+                            <div class="d-sm-flex card-body justify-content-between align-items-center" style="width: 495px; height: 60px;">
+                                <span class="font-weight-bold" style="color: black;">News</span>
+                                <img src="img/icon/news.svg" alt="">
+                            </div>
+                        </div>
+                    </a>
+                    <a href="horror.html">
+                        <div class="card d-sm-flex col-xl-auto col-md-6 mb-4 mr-2" style="background-color: #FF914D;">
+                            <div class="d-sm-flex card-body justify-content-between align-items-center" style="width: 495px; height: 60px;">
+                                <span class="font-weight-bold" style="color: black;">Horror</span>
+                                <img src="img/icon/horror.svg" alt="">
+                            </div>
+                        </div>
+                    </a> 
+                    </div>
+                    
+                    <div class="row d-sm-flex align-items-center justify-content-between">
+                        <a href="#">
+                        <div class="card d-sm-flex col-xl-auto col-md-6 mb-4 ml-3" style="background-color: #FF914D;">
+                            <div class="d-sm-flex card-body justify-content-between align-items-center" style="width: 495px; height: 60px;">
+                                <span class="font-weight-bold" style="color: black;">Business</span>
+                                <img src="img/icon/bussines.svg" alt="">
+                            </div>
+                        </div>
+                        </a>
+                        <a href="#">
+                        <div class="card d-sm-flex col-xl-auto col-md-6 mb-4 mr-2" style="background-color: #FF914D;">
+                            <div class="d-sm-flex card-body justify-content-between align-items-center" style="width: 495px; height: 60px;">
+                                <span class="font-weight-bold" style="color: black;">Education</span>
+                                <img src="img/icon/education.svg" alt="">
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="row d-sm-flex align-items-center justify-content-between">
+                        <a href="">
+                        <div class="card d-sm-flex col-xl-auto col-md-6 mb-4 ml-3" style="background-color: #FF914D;">
+                            <div class="d-sm-flex card-body justify-content-between align-items-center" style="width: 495px; height: 60px;">
+                                <span class="font-weight-bold" style="color: black;">Sports</span>
+                                <img src="img/icon/sport.svg" alt="">
+                            </div>
+                        </div>
+                    </a>
+                        <a href="">
+                        <div class="card d-sm-flex col-xl-auto col-md-6 mb-4 mr-2" style="background-color: #FF914D;">
+                            <div class="d-sm-flex card-body justify-content-between align-items-center" style="width: 495px; height: 60px;">
+                                <span class="font-weight-bold" style="color: black;">Technology</span>
+                                <img src="img/icon/technology.svg" alt="">
+                            </div>
+                        </div>
+                    </a>
+                    </div>
+                    <div class="row d-sm-flex align-items-center justify-content-between">
+                        <a href="">
+                        <div class="card d-sm-flex col-xl-auto col-md-6 mb-4 ml-3" style="background-color: #FF914D;">
+                            <div class="d-sm-flex card-body justify-content-between align-items-center" style="width: 495px; height: 60px;">
+                                <span class="font-weight-bold" style="color: black;">Comedy</span>
+                                <img src="img/icon/comedy.svg" alt="">
+                            </div>
+                        </div>
+                    </a>
+                        <a href="music.html">
+                        <div class="card d-sm-flex col-xl-auto col-md-6 mb-4 mr-2" style="background-color: #FF914D;">
+                            <div class="d-sm-flex card-body justify-content-between align-items-center" style="width: 495px; height: 60px;">
+                                <span class="font-weight-bold" style="color: black;">Music</span>
+                                <img src="img/icon/music.svg" alt="">
+                            </div>
+                        </div>
+                    </a>
+                    </div>
+                   
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <!-- /.container-fluid -->
+
+            </div>
+            <!-- End of Main Content -->
+
+          <!-- Footer -->
+          <footer class="sticky-footer" style="background-color: #814A8D;">
+            <div class="container-fluid mb-4">
+                <div class="row">
+                    <div class="col-sm">
+                        <img src="img/imgfooter.svg" alt="">
+                    </div>
+    
+                    <div class="col-sm">
+                        <div style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title text-white font-weight-bold">Start A Conversation</h5>
+                                <div class="mb-1">
+                                    <a href=""><img src="img/contact/email.svg" alt=""></a>
+                                    <span class="card-subtitle text-white mb-2">support@podquest.id</span>
+                                </div>
+                                <div class="mb-1">
+                                    <a href=""><img src="img/contact/phone.svg" alt=""></a>
+                                    <span class="card-subtitle text-white mb-2">(061) 333-2456</span>
+                                </div>
+                                <div class="mb-1">
+                                    <a href=""><img src="img/contact/mobile.svg" alt=""></a>
+                                    <span class="card-subtitle text-white mb-2">+62-874-6716-5067</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm">
+                        <div style="width: 18rem;">
+                            <div class="card-body">
+                                <h5 class="card-title text-white font-weight-bold">Follow us on</h5>
+                                <div>
+                                    <a href=""><img src="img/contact/instagram.svg" alt=""></a>
+                                    <a href=""><img src="img/contact/facebook.svg" alt=""></a>
+                                    <a href=""><img src="img/contact/twitter.svg" alt=""></a>
+                                    <a href=""><img src="img/contact/youtube.svg" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container my-auto">
+                <div class="copyright text-center my-auto">
+                    <span class="text-white">&copy; Podquest 2023</span>
+                </div>
+            </div>
+        </footer>
+        <!-- End of Footer -->
+    
+    </div>
+    <!-- End of Content Wrapper -->
+    
+    </div>
+    <!-- End of Page Wrapper -->
+    
+    <!-- Login Modal-->
+    <div class="modal fade" id="loginmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered " role="document">
+    <div class="modal-content">
+        <div class="modal-header ">
+            <h5 class="modal-title text-dark font-weight-bold" id="exampleModalLongTitle">Let's go in first!</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <h5 class="mt-1 font-weight-bold" style="color: #FF914D !important;">Close</h5>
+            </button>
+        </div>
+        <div class="modal-body text-center">
+            <img src="img/logomodal.svg" alt="">
+            <h4 class="text-dark font-weight-bold mt-3">Log in with your account to join this live</h4>
+            <h5 class="text-dark">Through one of the options below</h5>
+        </div>
+        <div class="modal-footer justify-content-center mb-3">
+            <div class="mb-2">
+                <a class="mr-3" href="loginFacebook.html"><img src="img/modal/fb.svg" alt=""></a>
+                <a class="" href=""><img src="img/modal/google.svg" alt=""></a>
+                <a class="ml-1" href=""><img src="img/modal/hp.svg" alt=""></a>
+            </div>
+            <div>By registering, you agree to the Terms & Conditions.</div>
+        </div>
+    </div>
+    </div>
+    </div>
+    
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js"></script>
+    
+    <!-- Page level plugins -->
+    <script src="vendor/chart.js/Chart.min.js"></script>
+    
+    <!-- Page level custom scripts -->
+    <script src="js/demo/chart-area-demo.js"></script>
+    <script src="js/demo/chart-pie-demo.js"></script>
+    <script src="flickity.js"></script>
+    
+    </body>
+    
+    </html>
